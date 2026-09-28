@@ -1,0 +1,63 @@
+\doxysection{ttt.\+h}
+\hypertarget{ttt_8h_source}{}\label{ttt_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{keyword}{class\ }ttt\ \{}
+\DoxyCodeLine{00006\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00007\ \ \ \ \ \textcolor{keyword}{struct\ }\doxymbox{\hyperlink{structttt_1_1pos}{pos}}\ \{\ \textcolor{keywordtype}{int}\ r;\ \textcolor{keywordtype}{int}\ c;\ \};}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keywordtype}{char}\ X\ =\ \textcolor{charliteral}{'X'};}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keywordtype}{char}\ O\ =\ \textcolor{charliteral}{'O'};}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keywordtype}{char}\ E\ =\ \textcolor{charliteral}{'.'};}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keyword}{class\ }ref\ \{}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ ref(ttt\&\ t,\ \textcolor{keywordtype}{int}\ i)\ :\ t\_(t),\ i\_(i)\ \{\}}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ ref(\textcolor{keyword}{const}\ ref\&)\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ ref\&\ operator=(\textcolor{keywordtype}{char}\ c);}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ ref\&\ operator=(\textcolor{keyword}{const}\ ref\&\ o);}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \textcolor{keyword}{operator}\ char()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ ttt\&\ t\_;}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ i\_;}
+\DoxyCodeLine{00022\ \ \ \ \ \};}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{explicit}\ ttt(\textcolor{keywordtype}{int}\ n\ =\ 3,\ \textcolor{keywordtype}{int}\ win\ =\ 0);}
+\DoxyCodeLine{00025\ \ \ \ \ ttt(\textcolor{keyword}{const}\ ttt\&\ other)\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00026\ \ \ \ \ \string~ttt()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00027\ \ \ \ \ ttt\&\ operator=(\textcolor{keyword}{const}\ ttt\&\ other)\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{int}\ size()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{int}\ wlen()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{bool}\ can(\doxymbox{\hyperlink{structttt_1_1pos}{pos}}\ p)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{char}\ operator[](\doxymbox{\hyperlink{structttt_1_1pos}{pos}}\ p)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00034\ \ \ \ \ \doxymbox{\hyperlink{classttt_1_1ref}{ref}}\ operator[](\doxymbox{\hyperlink{structttt_1_1pos}{pos}}\ p);}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{char}\ turn()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{bool}\ move(\doxymbox{\hyperlink{structttt_1_1pos}{pos}}\ p);}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{bool}\ win(\textcolor{keywordtype}{char}\ m)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{char}\ winner()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{bool}\ full()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{bool}\ over()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{void}\ reset();}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{bool}\ operator==(\textcolor{keyword}{const}\ ttt\&\ o)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{bool}\ operator!=(\textcolor{keyword}{const}\ ttt\&\ o)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{int}\ n\_;}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{int}\ k\_;}
+\DoxyCodeLine{00050\ \ \ \ \ std::vector<char>\ cells\_;}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{bool}\ in(\doxymbox{\hyperlink{structttt_1_1pos}{pos}}\ p)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{int}\ idx(\doxymbox{\hyperlink{structttt_1_1pos}{pos}}\ p)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{int}\ cnt(\textcolor{keywordtype}{char}\ m)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00055\ \};}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ std::ostream\&\ operator<<(std::ostream\&\ os,\ \textcolor{keyword}{const}\ \doxymbox{\hyperlink{classttt}{ttt}}\&\ t);}
+\DoxyCodeLine{00058\ std::istream\&\ operator>>(std::istream\&\ is,\ \doxymbox{\hyperlink{classttt}{ttt}}\&\ t);}
+
+\end{DoxyCode}
