@@ -1,0 +1,45 @@
+\doxysection{set.\+h}
+\hypertarget{set_8h_source}{}\label{set_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{class\ }Set\ \{}
+\DoxyCodeLine{00007\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00008\ \ \ \ \ Set()\{\};}
+\DoxyCodeLine{00009\ \ \ \ \ Set(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ str);}
+\DoxyCodeLine{00010\ \ \ \ \ Set(\textcolor{keyword}{const}\ std::string\&\ str);}
+\DoxyCodeLine{00011\ \ \ \ \ Set(\textcolor{keyword}{const}\ Set\&\ other);}
+\DoxyCodeLine{00012\ \ \ \ \ \string~Set()\{\};}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keywordtype}{bool}\ isEmpty()\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ this-\/>elems.empty();}
+\DoxyCodeLine{00015\ \ \ \ \ \}}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{int}\ size()\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ this-\/>elems.size();}
+\DoxyCodeLine{00018\ \ \ \ \ \}}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{void}\ add(\textcolor{keyword}{const}\ std::string\&\ elem);}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{void}\ remove(\textcolor{keyword}{const}\ std::string\&\ elem);}
+\DoxyCodeLine{00021\ \ \ \ \ Set\ powerSet()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00022\ \ \ \ \ std::string\ toString()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{bool}\ operator[](\textcolor{keyword}{const}\ std::string\&\ elem)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00024\ \ \ \ \ Set\ operator+(\textcolor{keyword}{const}\ Set\&\ other)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00025\ \ \ \ \ Set\ operator*(\textcolor{keyword}{const}\ Set\&\ other)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00026\ \ \ \ \ Set\ operator-\/(\textcolor{keyword}{const}\ Set\&\ other)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00027\ \ \ \ \ Set\&\ operator+=(\textcolor{keyword}{const}\ Set\&\ other);}
+\DoxyCodeLine{00028\ \ \ \ \ Set\&\ operator*=(\textcolor{keyword}{const}\ Set\&\ other);}
+\DoxyCodeLine{00029\ \ \ \ \ Set\&\ operator-\/=(\textcolor{keyword}{const}\ Set\&\ other);}
+\DoxyCodeLine{00030\ \ \ \ \ Set\&\ operator=(\textcolor{keyword}{const}\ Set\&\ other);}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{bool}\ operator==(\textcolor{keyword}{const}\ Set\&\ other)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{bool}\ operator!=(\textcolor{keyword}{const}\ Set\&\ other)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keyword}{friend}\ std::ostream\&\ operator<<(std::ostream\&\ os,\ \textcolor{keyword}{const}\ Set\&\ set);}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keyword}{friend}\ std::istream\&\ operator>>(std::istream\&\ is,\ Set\&\ set);}
+\DoxyCodeLine{00035\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00036\ \ \ \ \ std::vector<std::string>\ elems;}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keyword}{static}\ std::string\ trim(\textcolor{keyword}{const}\ std::string\&\ str);}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keyword}{static}\ std::string\ normalize(\textcolor{keyword}{const}\ std::string\&\ str);}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keyword}{static}\ std::vector<std::string>\ split(\textcolor{keyword}{const}\ std::string\&\ str);}
+\DoxyCodeLine{00040\ \};}
+
+\end{DoxyCode}

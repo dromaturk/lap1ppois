@@ -1,0 +1,77 @@
+\doxysection{Set Class Reference}
+\hypertarget{classSet}{}\label{classSet}\index{Set@{Set}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classSet_ab75f59fee50eb9d81a185dd7f37164d8}\label{classSet_ab75f59fee50eb9d81a185dd7f37164d8} 
+{\bfseries Set} (const char \texorpdfstring{$\ast$}{*}str)
+\item 
+\Hypertarget{classSet_ab858cb79188d21bbb2e7fc3e47cea6ff}\label{classSet_ab858cb79188d21bbb2e7fc3e47cea6ff} 
+{\bfseries Set} (const std::\+string \&str)
+\item 
+\Hypertarget{classSet_afabafceb41d2ffd814c0295ef20f4a2f}\label{classSet_afabafceb41d2ffd814c0295ef20f4a2f} 
+{\bfseries Set} (const \doxymbox{\hyperlink{classSet}{Set}} \&other)
+\item 
+\Hypertarget{classSet_a1cf24646271b309f8b2ba131f63f7e6d}\label{classSet_a1cf24646271b309f8b2ba131f63f7e6d} 
+bool {\bfseries is\+Empty} () const
+\item 
+\Hypertarget{classSet_abad7c3d6356167f02d1293881865c1c3}\label{classSet_abad7c3d6356167f02d1293881865c1c3} 
+int {\bfseries size} () const
+\item 
+\Hypertarget{classSet_a56496a1e0b4b194f7854352b9ddbc561}\label{classSet_a56496a1e0b4b194f7854352b9ddbc561} 
+void {\bfseries add} (const std::\+string \&elem)
+\item 
+\Hypertarget{classSet_aa829a38db6975b3f9913de698d53fc2d}\label{classSet_aa829a38db6975b3f9913de698d53fc2d} 
+void {\bfseries remove} (const std::\+string \&elem)
+\item 
+\Hypertarget{classSet_a2933b90af89f542bd331963400de5e36}\label{classSet_a2933b90af89f542bd331963400de5e36} 
+\doxymbox{\hyperlink{classSet}{Set}} {\bfseries power\+Set} () const
+\item 
+\Hypertarget{classSet_a8c7e1b2cc94ff53498bda0dab9b0e7f1}\label{classSet_a8c7e1b2cc94ff53498bda0dab9b0e7f1} 
+std::\+string {\bfseries to\+String} () const
+\item 
+\Hypertarget{classSet_af33a50072b0bf072361404077c3ba7f1}\label{classSet_af33a50072b0bf072361404077c3ba7f1} 
+bool {\bfseries operator\+[$\,$]} (const std::\+string \&elem) const
+\item 
+\Hypertarget{classSet_a2319ad4af40b84eabe2459b29aee998e}\label{classSet_a2319ad4af40b84eabe2459b29aee998e} 
+\doxymbox{\hyperlink{classSet}{Set}} {\bfseries operator+} (const \doxymbox{\hyperlink{classSet}{Set}} \&other) const
+\item 
+\Hypertarget{classSet_a45bda7548d4743614bd1663bcc12a218}\label{classSet_a45bda7548d4743614bd1663bcc12a218} 
+\doxymbox{\hyperlink{classSet}{Set}} {\bfseries operator\texorpdfstring{$\ast$}{*}} (const \doxymbox{\hyperlink{classSet}{Set}} \&other) const
+\item 
+\Hypertarget{classSet_a158d3f780877e79826543fe740d190c9}\label{classSet_a158d3f780877e79826543fe740d190c9} 
+\doxymbox{\hyperlink{classSet}{Set}} {\bfseries operator-\/} (const \doxymbox{\hyperlink{classSet}{Set}} \&other) const
+\item 
+\Hypertarget{classSet_ad8d040cff9b55a2cb219b64194a4e2d5}\label{classSet_ad8d040cff9b55a2cb219b64194a4e2d5} 
+\doxymbox{\hyperlink{classSet}{Set}} \& {\bfseries operator+=} (const \doxymbox{\hyperlink{classSet}{Set}} \&other)
+\item 
+\Hypertarget{classSet_ac78bb0d87da13a1c52ac4b87c3950165}\label{classSet_ac78bb0d87da13a1c52ac4b87c3950165} 
+\doxymbox{\hyperlink{classSet}{Set}} \& {\bfseries operator\texorpdfstring{$\ast$}{*}=} (const \doxymbox{\hyperlink{classSet}{Set}} \&other)
+\item 
+\Hypertarget{classSet_a4db7202a84f1ee7266f5510c1994f97a}\label{classSet_a4db7202a84f1ee7266f5510c1994f97a} 
+\doxymbox{\hyperlink{classSet}{Set}} \& {\bfseries operator-\/=} (const \doxymbox{\hyperlink{classSet}{Set}} \&other)
+\item 
+\Hypertarget{classSet_ab8dfb2461bb28a5d7c67c34df488508f}\label{classSet_ab8dfb2461bb28a5d7c67c34df488508f} 
+\doxymbox{\hyperlink{classSet}{Set}} \& {\bfseries operator=} (const \doxymbox{\hyperlink{classSet}{Set}} \&other)
+\item 
+\Hypertarget{classSet_a84c404faca958ceb200303648162b8f9}\label{classSet_a84c404faca958ceb200303648162b8f9} 
+bool {\bfseries operator==} (const \doxymbox{\hyperlink{classSet}{Set}} \&other) const
+\item 
+\Hypertarget{classSet_a042befd0edd17fcc2b3a25859ca44bbb}\label{classSet_a042befd0edd17fcc2b3a25859ca44bbb} 
+bool {\bfseries operator!=} (const \doxymbox{\hyperlink{classSet}{Set}} \&other) const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classSet_a487684b0c170800e494958c73857cbe7}\label{classSet_a487684b0c170800e494958c73857cbe7} 
+std::\+ostream \& {\bfseries operator$<$$<$} (std::\+ostream \&os, const \doxymbox{\hyperlink{classSet}{Set}} \&set)
+\item 
+\Hypertarget{classSet_a8773573942b1e875e128fa53e2186353}\label{classSet_a8773573942b1e875e128fa53e2186353} 
+std::\+istream \& {\bfseries operator$>$$>$} (std::\+istream \&is, \doxymbox{\hyperlink{classSet}{Set}} \&set)
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+set.\+h\item 
+set.\+cpp\end{DoxyCompactItemize}

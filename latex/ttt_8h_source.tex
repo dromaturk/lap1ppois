@@ -1,0 +1,39 @@
+\doxysection{ttt.\+h}
+\hypertarget{ttt_8h_source}{}\label{ttt_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{keyword}{class\ }TicTacToe\ \{}
+\DoxyCodeLine{00006\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00007\ \ \ \ \ TicTacToe();}
+\DoxyCodeLine{00008\ \ \ \ \ TicTacToe(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ size,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ winLen);}
+\DoxyCodeLine{00009\ \ \ \ \ TicTacToe(\textcolor{keyword}{const}\ TicTacToe\&\ other);}
+\DoxyCodeLine{00010\ \ \ \ \ \string~TicTacToe()\{\};}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keywordtype}{int}\ getSize()\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ this-\/>size;}
+\DoxyCodeLine{00013\ \ \ \ \ \}}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keywordtype}{int}\ getWinLen()\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ this-\/>winLen;}
+\DoxyCodeLine{00016\ \ \ \ \ \}}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{char}\ getCurrentPlayer()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{bool}\ canPlace(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ row,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ col)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{bool}\ move(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ row,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ col);}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{char}\ checkWinner()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{char}\ operator[](\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ index)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{char}\&\ operator[](\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ index);}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ printBoard(\textcolor{keyword}{const}\ TicTacToe\&\ game);}
+\DoxyCodeLine{00024\ \ \ \ \ TicTacToe\&\ operator=(\textcolor{keyword}{const}\ TicTacToe\&\ other);}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{bool}\ operator==(\textcolor{keyword}{const}\ TicTacToe\&\ other)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{bool}\ operator!=(\textcolor{keyword}{const}\ TicTacToe\&\ other)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{friend}\ std::ostream\&\ operator<<(std::ostream\&\ os,\ \textcolor{keyword}{const}\ TicTacToe\&\ game);}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keyword}{friend}\ std::istream\&\ operator>>(std::istream\&\ is,\ TicTacToe\&\ game);}
+\DoxyCodeLine{00029\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{int}\ size\ =\ 3;}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{int}\ winLen\ =\ 3;}
+\DoxyCodeLine{00032\ \ \ \ \ std::vector<char>\ cells;}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{bool}\ hasLine(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ player)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00034\ \};}
+
+\end{DoxyCode}
